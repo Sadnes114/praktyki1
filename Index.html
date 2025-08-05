@@ -1,34 +1,7 @@
 <Html>
     <head></head>
     <body>
-      <input type="text" id="imieInput" value="Hello" onfocus="wyczyscJesliDefault()">
+      <p>Hello Word </p>
 
-  <button onclick="powitaj()">Powitaj</button>
-
- 
-  <p id="wynik">Hello Word </p>
-
-  <script>
-    function wyczyscJesliDefault() {
-      const input = document.getElementById("imieInput");
-      if (input.value === "") {
-        input.value = "Hello ";
-      }
-    }
-
-    function powitaj() {
-      const input = document.getElementById("imieInput");
-      const tekst = input.value;
-
-      const imie = tekst.replace("Hello ", "").trim();
-
-      if (imie.length > 0) {
-        document.getElementById("wynik").textContent = "Hello " + imie;
-      }
-    }
-  </script>
-
-   
-        </script>
     </body>
 </Html> 
