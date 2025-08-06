@@ -1,7 +1,12 @@
 <Html>
     <head></head>
     <body>
-      <p>Hello Word </p>
-
+      <p id="Wellcome">Hello Word.</p>
+        <script>
+          const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const Today = new Date();
+          const Dayofweek = days[Today.getDay()];
+         document.getElementById("Wellcome").textContent = `Hello Word! Happy ${Dayofweek}`;
+        </script>
     </body>
 </Html> 
