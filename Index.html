@@ -1,7 +1,22 @@
 <Html>
     <head></head>
     <body>
-      <p>Hello Word </p>
+         <input type="text" id="imieInput" value="" onfocus="wyczyscJesliDefault()">
 
+  <button onclick="powitaj()">Powitaj</button>
+
+ 
+  <p id="wynik">Hello Word </p>
+
+  <script>
+    function powitaj() {
+      const input = document.getElementById("imieInput");
+      const tekst = input.value;
+ 
+      if (tekst.length > 0) {
+        document.getElementById("wynik").textContent = "Hello " + tekst;
+      }
+    }
+  </script>
     </body>
 </Html> 
