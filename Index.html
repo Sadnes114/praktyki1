@@ -1,7 +1,7 @@
 <Html>
     <head></head>
     <body>
-         <input type="text" id="imieInput" value="Hello" onfocus="wyczyscJesliDefault()">
+         <input type="text" id="imieInput" value="" onfocus="wyczyscJesliDefault()">
 
   <button onclick="powitaj()">Powitaj</button>
 
@@ -9,13 +9,6 @@
   <p id="wynik">Hello Word </p>
 
   <script>
-    function wyczyscJesliDefault() {
-      const input = document.getElementById("imieInput");
-      if (input.value === "") {
-        input.value = "Hello ";
-      }
-    }
-
     function powitaj() {
       const input = document.getElementById("imieInput");
       const tekst = input.value;
