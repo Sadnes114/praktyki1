@@ -1,15 +1,19 @@
 <Html>
     <head></head>
     <body>
-         <input type="text" id="imieInput" value="" onfocus="wyczyscJesliDefault()">
+    <p id="wynik">Hello Word </p>
 
-  <button onclick="powitaj()">Powitaj</button>
+    <input type="text" id="imieInput" value="" >
 
- 
-  <p id="wynik">Hello Word </p>
+    <button onclick="powitaj()">Powitaj</button>
 
-  <script>
-    function powitaj() {
+      <script>
+         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const Today = new Date();
+          const Dayofweek = days[Today.getDay()];
+         document.getElementById("wynik").textContent = `Hello Word! Happy ${Dayofweek}`;
+
+         function powitaj() {
       const input = document.getElementById("imieInput");
       const tekst = input.value;
  
@@ -17,6 +21,7 @@
         document.getElementById("wynik").textContent = "Hello " + tekst;
       }
     }
-  </script>
+      </script>
+
     </body>
 </Html> 
